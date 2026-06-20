@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "team": "Members",
+    "contact": "Contact",
+    "conduct": "Code of Conduct"
+  },
+  "hero": {
+    "title1": "ReCloud Studio",
+    "subtitle": "We build open-source software. Fair, transparent, and community-driven.",
+    "motto": "All code is created equal.",
+    "cta": "Explore projects",
+    "demo": "Meet the team"
+  },
+  "features": {
+    "oss": "100% open source",
+    "community": "Community driven",
+    "transparent": "Built in public",
+    "permissive": "MIT licensed"
+  },
+  "projects": {
+    "title": "Our projects",
+    "subtitle": "Open-source tools we build and maintain",
+    "noDescription": "No description provided.",
+    "empty": "No projects found."
+  },
+  "team": {
+    "title": "Meet the team",
+    "subtitle": "A small team passionate about open source and equality",
+    "back": "Back to team"
+  },
+  "social": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "discord": "Discord"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

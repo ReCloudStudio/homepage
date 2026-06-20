@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "首页",
+    "projects": "项目",
+    "team": "成员",
+    "contact": "联系我们",
+    "conduct": "成员守则"
+  },
+  "hero": {
+    "title1": "ReCloud Studio",
+    "subtitle": "我们打造开源软件。公平、透明、社区驱动。",
+    "motto": "代码皆平等。",
+    "cta": "探索项目",
+    "demo": "成员列表"
+  },
+  "features": {
+    "oss": "完全开源",
+    "community": "社区驱动",
+    "transparent": "公开构建",
+    "permissive": "MIT 许可"
+  },
+  "projects": {
+    "title": "我们的项目",
+    "subtitle": "我们构建和维护的开源工具",
+    "noDescription": "暂无描述",
+    "empty": "暂无项目"
+  },
+  "team": {
+    "title": "认识我们的团队",
+    "subtitle": "一个热爱开源与平等的小团队",
+    "back": "返回团队"
+  },
+  "social": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "discord": "Discord"
+  },
+  "footer": {
+    "copyright": "保留所有权利。"
+  }
+}
