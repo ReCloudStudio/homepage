@@ -5,6 +5,10 @@ motto: 趁世界还未重启之前 约一次爱恋
 github: RhenCloud
 twitter: RhenCloud_
 website: https://rhen.cloud
+matrix: "@RhenCloud:matrix.org"
+telegram: RhenCloud
+bilibili: "1502883335"
+email: i@rhen.cloud
 ---
 
 高中生，开源软件爱好者，现居中国天津。

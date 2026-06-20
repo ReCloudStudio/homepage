@@ -33,7 +33,11 @@
   "social": {
     "github": "GitHub",
     "twitter": "Twitter",
-    "discord": "Discord"
+    "discord": "Discord",
+    "matrix": "Matrix",
+    "telegram": "Telegram",
+    "bilibili": "Bilibili",
+    "email": "邮箱"
   },
   "footer": {
     "copyright": "保留所有权利。"

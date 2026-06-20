@@ -33,7 +33,11 @@
   "social": {
     "github": "GitHub",
     "twitter": "Twitter",
-    "discord": "Discord"
+    "discord": "Discord",
+    "matrix": "Matrix",
+    "telegram": "Telegram",
+    "bilibili": "Bilibili",
+    "email": "Email"
   },
   "footer": {
     "copyright": "All rights reserved."

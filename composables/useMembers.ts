@@ -9,6 +9,11 @@ export interface MemberLocalized {
   github?: string
   twitter?: string
   website?: string
+  matrix?: string
+  discord?: string
+  telegram?: string
+  bilibili?: string
+  email?: string
 }
 
 function parseFrontmatter(raw: string) {
@@ -51,6 +56,11 @@ function loadMembers(lang: string) {
         github: data.github || undefined,
         twitter: data.twitter || undefined,
         website: data.website || undefined,
+        matrix: data.matrix || undefined,
+        discord: data.discord || undefined,
+        telegram: data.telegram || undefined,
+        bilibili: data.bilibili || undefined,
+        email: data.email || undefined,
       }
     })
 }

@@ -5,6 +5,10 @@ motto: Building the future, one commit at a time.
 github: RhenCloud
 twitter: RhenCloud_
 website: https://rhen.cloud
+matrix: "@RhenCloud:matrix.org"
+telegram: RhenCloud
+bilibili: "1502883335"
+email: i@rhen.cloud
 ---
 
 High school student and open-source enthusiast based in Tianjin, China.
