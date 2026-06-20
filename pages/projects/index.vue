@@ -16,15 +16,16 @@ const { data: repos } = await useFetch<Repo[]>('/api/repos')
 
 <template>
   <section class="relative z-10 mx-auto flex min-h-[calc(100vh-5rem)] max-w-6xl flex-col items-center px-6 py-32">
-    <div class="mb-16 text-center">
+    <div class="mb-16 text-center animate-fade-up" style="animation-delay: 0.1s">
       <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-zinc-900 dark:text-white">{{ t('projects.title') }}</h2>
       <p class="mt-3 text-zinc-600 dark:text-zinc-500">{{ t('projects.subtitle') }}</p>
     </div>
     <div class="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <article
-        v-for="repo in repos"
+        v-for="(repo, i) in repos"
         :key="repo.name"
-        class="group flex flex-col rounded-xl border border-zinc-200 bg-white p-6 transition-colors hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900/40 dark:hover:border-zinc-700"
+        class="animate-fade-up group flex flex-col rounded-xl border border-zinc-200 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/40 dark:hover:border-zinc-700 dark:hover:shadow-zinc-900/30"
+        :style="{ animationDelay: `${0.15 + i * 0.08}s` }"
       >
         <div class="flex items-start justify-between">
           <a

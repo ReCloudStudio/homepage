@@ -1,6 +1,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2026-06-20',
   app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+    },
     head: {
       title: 'ReCloud Studio',
       meta: [
@@ -57,6 +61,7 @@ export default defineNuxtConfig({
     families: {
       Syne: [400, 500, 600, 700, 800],
       'DM Sans': [400, 500, 600, 700],
+      'Noto Sans SC': [300, 400, 500, 600, 700],
     },
     display: 'swap',
     prefetch: true,

@@ -74,7 +74,8 @@ const socialLinks = computed(() => {
   <div v-if="member" class="relative z-10 mx-auto max-w-4xl px-6 py-32">
     <NuxtLink
       :to="locale === 'en' ? '/en/team' : '/team'"
-      class="mb-12 inline-flex items-center gap-2 text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-white"
+      class="animate-fade-up mb-12 inline-flex items-center gap-2 text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-white"
+      style="animation-delay: 0.05s"
     >
       <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
@@ -82,12 +83,12 @@ const socialLinks = computed(() => {
       {{ t('team.back') }}
     </NuxtLink>
 
-    <div class="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left">
+    <div class="flex animate-fade-up flex-col items-center text-center sm:flex-row sm:items-start sm:text-left" style="animation-delay: 0.12s">
       <div v-if="member.github" class="h-32 w-32 sm:h-40 sm:w-40">
         <img
           :src="useAvatarUrl(member.github)"
           :alt="member.name"
-          class="h-32 w-32 rounded-full bg-zinc-200 shadow-lg sm:h-40 sm:w-40 dark:bg-zinc-800"
+          class="h-32 w-32 rounded-full bg-zinc-200 shadow-lg transition-transform duration-300 hover:scale-105 sm:h-40 sm:w-40 dark:bg-zinc-800"
         />
       </div>
       <div class="mt-6 sm:mt-0 sm:ml-10">
@@ -112,7 +113,7 @@ const socialLinks = computed(() => {
       </div>
     </div>
 
-    <div class="mt-16 border-t border-zinc-200 pt-10 dark:border-zinc-800">
+    <div class="mt-16 border-t border-zinc-200 pt-12 dark:border-zinc-800 animate-fade-up" style="animation-delay: 0.2s">
       <!-- eslint-disable-next-line vue/no-v-html -->
       <div class="prose prose-zinc max-w-none dark:prose-invert prose-code:rounded prose-code:bg-zinc-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-zinc-800 prose-code:before:content-none prose-code:after:content-none dark:prose-code:bg-zinc-800 dark:prose-code:text-zinc-200" v-html="member.bio" />
     </div>

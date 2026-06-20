@@ -19,6 +19,6 @@ const html = computed(() => {
 <template>
   <section class="relative z-10 mx-auto max-w-3xl px-6 py-32">
     <!-- eslint-disable-next-line vue/no-v-html -->
-    <div v-if="html" class="prose prose-zinc mx-auto dark:prose-invert max-w-none prose-headings:scroll-mt-20 prose-headings:font-semibold prose-h1:text-3xl prose-h1:text-center prose-h1:tracking-tight sm:prose-h1:text-4xl prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-a:text-teal-600 dark:prose-a:text-teal-400 prose-strong:text-zinc-900 dark:prose-strong:text-white prose-li:marker:text-zinc-400" v-html="html" />
+    <div v-if="html" class="prose prose-zinc mx-auto dark:prose-invert max-w-none prose-code:rounded prose-code:bg-zinc-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-zinc-800 prose-code:before:content-none prose-code:after:content-none dark:prose-code:bg-zinc-800 dark:prose-code:text-zinc-200" v-html="html" />
   </section>
 </template>

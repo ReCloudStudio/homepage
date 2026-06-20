@@ -117,3 +117,49 @@ function toggleTheme() {
     </footer>
   </div>
 </template>
+
+<style>
+:root {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: rgba(20, 184, 166, 0.25);
+  color: inherit;
+}
+
+.dark ::selection {
+  background-color: rgba(20, 184, 166, 0.35);
+}
+
+*:focus-visible {
+  outline: 2px solid rgb(20 184 166);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>

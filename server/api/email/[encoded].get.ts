@@ -12,5 +12,18 @@ export default defineEventHandler((event) => {
   if (!email.includes('@')) {
     throw createError({ statusCode: 400, statusMessage: 'Invalid email' })
   }
-  return sendRedirect(event, `mailto:${email}`, 302)
+  const mailto = `mailto:${email}`
+  setResponseHeader(event, 'Content-Type', 'text/html; charset=utf-8')
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0;url=${mailto}">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <script>location.href="${mailto}"</script>
+  <p>Redirecting to <a href="${mailto}">${email}</a>...</p>
+</body>
+</html>`
 })
