@@ -2,13 +2,6 @@
 name: RhenCloud
 role: 创始人 & 开发者
 motto: 趁世界还未重启之前 约一次爱恋
-github: RhenCloud
-twitter: RhenCloud_
-website: https://rhen.cloud
-matrix: "@RhenCloud:matrix.org"
-telegram: RhenCloud
-bilibili: "1502883335"
-email: i@rhen.cloud
 ---
 
 高中生，开源软件爱好者，现居中国天津。
@@ -117,6 +110,6 @@ Minecraft 生电玩家。
 - Bilibili: [RhenCloud](https://space.bilibili.com/1502883335)
 - Matrix: [@RhenCloud:matrix.org](https://matrix.to/#/@RhenCloud:matrix.org)
 - Telegram: [RhenCloud](https://t.me/RhenCloud)
-- Email: [i@rhen.cloud](mailto:i@rhen.cloud)
+- Email: [i@rhen.cloud](/api/email/aUByaGVuLmNsb3Vk)
 - NetEase Music: [RhenCloud](https://music.163.com/#/user?id=8028363957)
 - Discord: [RhenCloud](https://discord.gg/FUQM7GsY)

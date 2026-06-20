@@ -2,13 +2,6 @@
 name: RhenCloud
 role: Founder & Developer
 motto: Building the future, one commit at a time.
-github: RhenCloud
-twitter: RhenCloud_
-website: https://rhen.cloud
-matrix: "@RhenCloud:matrix.org"
-telegram: RhenCloud
-bilibili: "1502883335"
-email: i@rhen.cloud
 ---
 
 High school student and open-source enthusiast based in Tianjin, China.
@@ -111,6 +104,6 @@ My NixOS configuration files.
 - Bilibili: [RhenCloud](https://space.bilibili.com/1502883335)
 - Matrix: [@RhenCloud:matrix.org](https://matrix.to/#/@RhenCloud:matrix.org)
 - Telegram: [RhenCloud](https://t.me/RhenCloud)
-- Email: [i@rhen.cloud](mailto:i@rhen.cloud)
+- Email: [i@rhen.cloud](/api/email/aUByaGVuLmNsb3Vk)
 - NetEase Music: [RhenCloud](https://music.163.com/#/user?id=8028363957)
 - Discord: [RhenCloud](https://discord.gg/FUQM7GsY)

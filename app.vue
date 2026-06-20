@@ -5,7 +5,7 @@ const { locale, setLocale } = useI18n()
 const localePath = useLocalePath()
 const colorMode = useColorMode()
 
-const emailLink = `/api/email/${btoa(siteConfig.email)}`
+const emailLink = `/api/email/${siteConfig.email}`
 
 const localeOptions = [
   { code: 'en', name: 'English' },
