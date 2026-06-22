@@ -18,17 +18,21 @@ export default defineNuxtConfig({
           content: 'We build open-source software. Fair, transparent, and community-driven.',
         },
         { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://recloud.studio' },
+
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'ReCloud Studio' },
         {
           name: 'twitter:description',
           content: 'We build open-source software. Fair, transparent, and community-driven.',
         },
+
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' },
         { rel: 'apple-touch-icon', href: '/favicon.png' },
       ],
+
     },
   },
   colorMode: {
@@ -42,13 +46,16 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
+    '@nuxt/image',
+    '@nuxtjs/sitemap',
+    'nuxt-og-image',
   ],
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
-      { code: 'zh-CN', iso: 'zh-CN', file: 'zh-CN.json', name: '简体中文' },
+      { code: 'zh', iso: 'zh-CN', file: 'zh-CN.json', name: '简体中文' },
     ],
-    defaultLocale: 'zh-CN',
+    defaultLocale: 'zh',
     langDir: 'locales',
     strategy: 'prefix_except_default',
     detectBrowserLanguage: {
@@ -59,14 +66,18 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Syne: [400, 500, 600, 700, 800],
-      'DM Sans': [400, 500, 600, 700],
-      'Noto Sans SC': [300, 400, 500, 600, 700],
+      Syne: [400, 600, 700],
+      'DM Sans': [400, 500, 600],
+      'Noto Sans SC': [400, 500, 700],
     },
     display: 'swap',
     prefetch: true,
     preconnect: true,
   },
+  ogImage: {
+    zeroRuntime: true,
+  },
+
   nitro: {
     preset: 'cloudflare-pages',
   },
@@ -75,4 +86,5 @@ export default defineNuxtConfig({
       include: ['marked'],
     },
   },
+
 })

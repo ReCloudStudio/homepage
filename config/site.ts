@@ -6,8 +6,8 @@ export const siteConfig = {
 
   social: {
     github: 'recloudstudio',
-    // twitter: "recloudstudio",
-    // discord: "recloudstudio",
+    twitter: undefined as string | undefined,
+    discord: undefined as string | undefined,
   },
 
   repos: ['Shit-Bot', 'x-to-img'],

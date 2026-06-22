@@ -1,11 +1,16 @@
 <script setup lang="ts">
-const { locale, t } = useI18n()
+const { t } = useI18n()
+const localePath = useLocalePath()
 const { members } = useMembers()
 
-function memberUrl(m: { slug: string }) {
-  const lang = locale.value.startsWith('zh') ? '' : 'en/'
-  return `/${lang}team/${m.slug}`
-}
+useHead({
+  title: `${t('team.title')} — ReCloud Studio`,
+})
+
+defineOgImage('OgImageDefault', {
+  title: t('team.title'),
+  description: t('team.subtitle'),
+})
 </script>
 
 <template>
@@ -14,11 +19,14 @@ function memberUrl(m: { slug: string }) {
       <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-zinc-900 dark:text-white">{{ t('team.title') }}</h2>
       <p class="mt-3 text-zinc-600 dark:text-zinc-500">{{ t('team.subtitle') }}</p>
     </div>
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div v-if="members.length === 0" class="text-center text-zinc-500">
+      {{ t('team.empty') }}
+    </div>
+    <div v-else class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <NuxtLink
         v-for="(m, i) in members"
         :key="i"
-        :to="memberUrl(m)"
+        :to="localePath({ name: 'team-slug', params: { slug: m.slug } })"
         class="animate-fade-up group flex flex-col items-center rounded-2xl border border-transparent px-6 py-10 text-center transition-all duration-300 hover:-translate-y-1 hover:border-zinc-200 hover:bg-zinc-100 hover:shadow-lg dark:hover:border-zinc-800 dark:hover:bg-zinc-900/50 dark:hover:shadow-zinc-900/30"
         :style="{ animationDelay: `${0.15 + i * 0.1}s` }"
       >

@@ -1,5 +1,13 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
+
+useHead({
+  title: 'ReCloud Studio',
+})
+
+defineOgImage('OgImageDefault', {
+  title: 'ReCloud Studio',
+})
 </script>
 
 <template>
@@ -64,3 +72,4 @@ const localePath = useLocalePath()
     </main>
   </div>
 </template>
+

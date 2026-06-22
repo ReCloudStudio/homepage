@@ -11,7 +11,8 @@
     "subtitle": "我们打造开源软件。公平、透明、社区驱动。",
     "motto": "代码皆平等。",
     "cta": "探索项目",
-    "demo": "成员列表"
+    "demo": "成员列表",
+    "slogan0": "代码皆平等。"
   },
   "features": {
     "oss": "完全开源",
@@ -23,12 +24,14 @@
     "title": "我们的项目",
     "subtitle": "我们构建和维护的开源工具",
     "noDescription": "暂无描述",
-    "empty": "暂无项目"
+    "empty": "暂无项目",
+    "error": "项目加载失败，请稍后重试。"
   },
   "team": {
     "title": "认识我们的团队",
     "subtitle": "一个热爱开源与平等的小团队",
-    "back": "返回团队"
+    "back": "返回团队",
+    "empty": "暂无团队成员。"
   },
   "social": {
     "github": "GitHub",

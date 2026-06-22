@@ -11,7 +11,16 @@ interface Repo {
   homepage: string
 }
 
-const { data: repos } = await useFetch<Repo[]>('/api/repos')
+const { data: repos, pending, error } = await useFetch<Repo[]>('/api/repos')
+
+useHead({
+  title: `${t('projects.title')} — ReCloud Studio`,
+})
+
+defineOgImage('OgImageDefault', {
+  title: t('projects.title'),
+  description: t('projects.subtitle'),
+})
 </script>
 
 <template>
@@ -20,9 +29,21 @@ const { data: repos } = await useFetch<Repo[]>('/api/repos')
       <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-zinc-900 dark:text-white">{{ t('projects.title') }}</h2>
       <p class="mt-3 text-zinc-600 dark:text-zinc-500">{{ t('projects.subtitle') }}</p>
     </div>
-    <div class="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+    <div v-if="pending" class="flex items-center justify-center py-20">
+      <div class="h-8 w-8 animate-spin rounded-full border-2 border-teal-500 border-t-transparent" />
+    </div>
+
+    <div v-else-if="error" class="flex flex-col items-center gap-4 py-20 text-center">
+      <svg class="h-12 w-12 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+      </svg>
+      <p class="text-zinc-600 dark:text-zinc-400">{{ t('projects.error') }}</p>
+    </div>
+
+    <div v-else class="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <article
-        v-for="(repo, i) in repos"
+        v-for="(repo, i) in repos || []"
         :key="repo.name"
         class="animate-fade-up group flex flex-col rounded-xl border border-zinc-200 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/40 dark:hover:border-zinc-700 dark:hover:shadow-zinc-900/30"
         :style="{ animationDelay: `${0.15 + i * 0.08}s` }"
@@ -59,6 +80,7 @@ const { data: repos } = await useFetch<Repo[]>('/api/repos')
         </div>
       </article>
     </div>
+
     <div v-if="repos && repos.length === 0" class="mt-16 text-center text-zinc-500">
       {{ t('projects.empty') }}
     </div>

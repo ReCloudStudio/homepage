@@ -11,7 +11,11 @@
     "subtitle": "We build open-source software. Fair, transparent, and community-driven.",
     "motto": "All code is created equal.",
     "cta": "Explore projects",
-    "demo": "Meet the team"
+    "demo": "Meet the team",
+    "slogan0": "We build open-source software.",
+    "slogan1": "Fair, transparent, and community-driven.",
+    "slogan2": "All code is created equal.",
+    "slogan3": "Open Source, Open Future."
   },
   "features": {
     "oss": "100% open source",
@@ -23,12 +27,14 @@
     "title": "Our projects",
     "subtitle": "Open-source tools we build and maintain",
     "noDescription": "No description provided.",
-    "empty": "No projects found."
+    "empty": "No projects found.",
+    "error": "Failed to load projects. Please try again later."
   },
   "team": {
     "title": "Meet the team",
     "subtitle": "A small team passionate about open source and equality",
-    "back": "Back to team"
+    "back": "Back to team",
+    "empty": "No team members found."
   },
   "social": {
     "github": "GitHub",
