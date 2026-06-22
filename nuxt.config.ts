@@ -78,6 +78,12 @@ export default defineNuxtConfig({
     zeroRuntime: true,
   },
 
+  postcss: {
+    plugins: {
+      '@tailwindcss/postcss': false,
+    },
+  },
+
   nitro: {
     preset: 'cloudflare-pages',
   },
