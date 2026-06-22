@@ -37,5 +37,8 @@
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.5",
     "wrangler": "^4.103.0"
+  },
+  "overrides": {
+    "tailwindcss": "~3.4.17"
   }
 }
