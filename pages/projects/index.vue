@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, te, locale } = useI18n()
 
 interface Repo {
   name: string
@@ -12,6 +12,12 @@ interface Repo {
 }
 
 const { data: repos, pending, error } = await useFetch<Repo[]>('/api/repos')
+
+function repoDescription(repo: Repo): string {
+  const key = `projects.descriptions.${repo.name}`
+  if (te(key, locale.value)) return t(key)
+  return repo.description || t('projects.noDescription')
+}
 
 useHead({
   title: `${t('projects.title')} — ReCloud Studio`,
@@ -62,7 +68,7 @@ defineOgImage('OgImageDefault', {
             {{ repo.stars }}
           </span>
         </div>
-        <p class="mt-3 flex-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{{ repo.description || t('projects.noDescription') }}</p>
+        <p class="mt-3 flex-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{{ repoDescription(repo) }}</p>
         <div class="mt-4 flex flex-wrap gap-2">
           <span
             v-if="repo.language"

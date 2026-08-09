@@ -25,7 +25,15 @@
     "subtitle": "我们构建和维护的开源工具",
     "noDescription": "暂无描述",
     "empty": "暂无项目",
-    "error": "项目加载失败，请稍后重试。"
+    "error": "项目加载失败，请稍后重试。",
+    "descriptions": {
+      "WebHooker": "GitHub webhook → Discord 分发器。通过 Cloudflare Workers 接收 webhook 事件，应用过滤规则，并将格式化消息路由到 Discord 频道或线程。",
+      "Mailer": "一个小巧的 Go 守护进程，定期检查一个或多个邮箱的新邮件，并通过 Telegram 和/或 Discord Bot 推送通知。",
+      "Shit-Bot": "自动监控 X/Twitter 用户发帖，通过 Discord/Telegram Bot 推送到群组或频道。支持关键词过滤、媒体过滤、推文渲染为图片、多管理员审批机制。",
+      "x-to-img": "将 X/Twitter 推文转换为 PNG 图片的 API 服务。基于 Hono + Satori 构建，支持部署到 Cloudflare Workers / Deno Deploy / Bun。",
+      "SleepyXposed": "Xposed 模块，用于实时监控 Android 设备的前台应用切换并同步到 Sleepy 服务器，展示个人在线状态。支持电量与充电状态追踪、自定义服务器、媒体状态上报（系统钩子/通知监听/Dumpsys）及多级日志。",
+      "homepage": "本站源码，基于 Nuxt 4 与 Tailwind CSS 构建，部署于 Cloudflare Pages。"
+    }
   },
   "team": {
     "title": "认识我们的团队",
