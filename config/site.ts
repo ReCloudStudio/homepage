@@ -10,7 +10,7 @@ export const siteConfig = {
     discord: undefined as string | undefined,
   },
 
-  repos: ['Shit-Bot', 'x-to-img'],
+  repos: ['WebHooker', 'Mailer', 'SleepyXposed', 'Shit-Bot', 'x-to-img', 'homepage'],
 }
 
 export type SiteConfig = typeof siteConfig
