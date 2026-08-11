@@ -78,6 +78,9 @@ export default defineNuxtConfig({
     zeroRuntime: true,
   },
 
+  devServer: {
+    host: '0.0.0.0',
+  },
   nitro: {
     preset: 'cloudflare-pages',
   },

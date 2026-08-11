@@ -3,6 +3,7 @@
     "home": "首页",
     "projects": "项目",
     "team": "成员",
+    "partners": "友链",
     "contact": "联系我们",
     "conduct": "成员守则"
   },
@@ -41,9 +42,21 @@
     "back": "返回团队",
     "empty": "暂无团队成员。"
   },
+  "partners": {
+    "title": "合作伙伴与友链",
+    "subtitle": "我们合作或推荐的组织与站点",
+    "sectionPartners": "合作伙伴",
+    "sectionFriends": "友情链接",
+    "empty": "暂无链接。",
+    "descriptions": {
+      "TransHelper": "面向跨性别群体的开源技术团队，专注构建实用、隐私优先的软件与基础设施。"
+    }
+  },
   "social": {
     "github": "GitHub",
-    "twitter": "Twitter",
+    "twitter": "X",
+    "x": "X",
+    "telegram": "Telegram",
     "discord": "Discord",
     "matrix": "Matrix",
     "telegram": "Telegram",

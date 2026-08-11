@@ -72,6 +72,7 @@ useHead(() => ({
         <NuxtLink :to="localePath('/')" class="transition-colors hover:text-zinc-900 dark:hover:text-white">{{ $t('nav.home') }}</NuxtLink>
         <NuxtLink :to="localePath('/projects')" class="transition-colors hover:text-zinc-900 dark:hover:text-white">{{ $t('nav.projects') }}</NuxtLink>
         <NuxtLink :to="localePath('/team')" class="transition-colors hover:text-zinc-900 dark:hover:text-white">{{ $t('nav.team') }}</NuxtLink>
+        <NuxtLink :to="localePath('/partners')" class="transition-colors hover:text-zinc-900 dark:hover:text-white">{{ $t('nav.partners') }}</NuxtLink>
         <NuxtLink :to="localePath('/conduct')" class="transition-colors hover:text-zinc-900 dark:hover:text-white">{{ $t('nav.conduct') }}</NuxtLink>
         <a :href="emailLink" class="rounded-full border border-zinc-300 px-5 py-2 transition-colors hover:border-teal-500 hover:text-teal-600 dark:border-zinc-700 dark:hover:border-teal-500/50 dark:hover:text-white">
           {{ $t('nav.contact') }}
@@ -125,6 +126,7 @@ useHead(() => ({
         <NuxtLink :to="localePath('/')" class="transition-colors hover:text-zinc-900 dark:hover:text-white" @click="navOpen = false">{{ $t('nav.home') }}</NuxtLink>
         <NuxtLink :to="localePath('/projects')" class="transition-colors hover:text-zinc-900 dark:hover:text-white" @click="navOpen = false">{{ $t('nav.projects') }}</NuxtLink>
         <NuxtLink :to="localePath('/team')" class="transition-colors hover:text-zinc-900 dark:hover:text-white" @click="navOpen = false">{{ $t('nav.team') }}</NuxtLink>
+        <NuxtLink :to="localePath('/partners')" class="transition-colors hover:text-zinc-900 dark:hover:text-white" @click="navOpen = false">{{ $t('nav.partners') }}</NuxtLink>
         <NuxtLink :to="localePath('/conduct')" class="transition-colors hover:text-zinc-900 dark:hover:text-white" @click="navOpen = false">{{ $t('nav.conduct') }}</NuxtLink>
         <a :href="emailLink" class="inline-flex items-center self-start rounded-full border border-zinc-300 px-5 py-2 transition-colors hover:border-teal-500 hover:text-teal-600 dark:border-zinc-700 dark:hover:border-teal-500/50 dark:hover:text-white" @click="navOpen = false">
           {{ $t('nav.contact') }}
@@ -182,14 +184,25 @@ useHead(() => ({
           </a>
           <a
             v-if="siteConfig.social.twitter"
-            :href="`https://twitter.com/${siteConfig.social.twitter}`"
+            :href="`https://x.com/${siteConfig.social.twitter}`"
             target="_blank"
             rel="noopener noreferrer"
             class="flex items-center gap-2 text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-white"
-            aria-label="Twitter"
+            aria-label="X"
           >
             <IconTwitter />
-            {{ $t('social.twitter') }}
+            {{ $t('social.x') }}
+          </a>
+          <a
+            v-if="siteConfig.social.telegram"
+            :href="`https://t.me/${siteConfig.social.telegram}`"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-white"
+            aria-label="Telegram"
+          >
+            <IconTelegram />
+            {{ $t('social.telegram') }}
           </a>
           <a
             v-if="siteConfig.social.discord"

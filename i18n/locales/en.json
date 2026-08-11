@@ -3,6 +3,7 @@
     "home": "Home",
     "projects": "Projects",
     "team": "Members",
+    "partners": "Partners",
     "contact": "Contact",
     "conduct": "Code of Conduct"
   },
@@ -44,9 +45,21 @@
     "back": "Back to team",
     "empty": "No team members found."
   },
+  "partners": {
+    "title": "Partners & Friends",
+    "subtitle": "Organizations and sites we collaborate with or recommend",
+    "sectionPartners": "Partners",
+    "sectionFriends": "Friend links",
+    "empty": "No links yet.",
+    "descriptions": {
+      "TransHelper": "An open-source engineering team building practical, privacy-first software and infrastructure for the transgender community."
+    }
+  },
   "social": {
     "github": "GitHub",
-    "twitter": "Twitter",
+    "twitter": "X",
+    "x": "X",
+    "telegram": "Telegram",
     "discord": "Discord",
     "matrix": "Matrix",
     "telegram": "Telegram",
