@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "npx vue-tsc --noEmit"
+    "typecheck": "npx vue-tsc --noEmit",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@nuxt/image": "^1.10.0",
