@@ -7,9 +7,10 @@ useHead({
   title: `${t('team.title')} — ReCloud Studio`,
 })
 
-defineOgImage('OgImageDefault', {
-  title: t('team.title'),
-  description: t('team.subtitle'),
+defineOgImage('OgImageDefault.takumi', {
+  title: t('team.title', 'en'),
+  description: t('team.subtitle', 'en'),
+  fonts: ogFonts(),
 })
 </script>
 

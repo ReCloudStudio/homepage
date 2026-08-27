@@ -33,9 +33,9 @@ useHead(() => ({
         '@context': 'https://schema.org',
         '@type': 'Organization',
         name: 'ReCloud Studio',
-        url: 'https://recloud.studio',
+        url: 'https://worldexecute.me',
         description: 'We build open-source software. Fair, transparent, and community-driven.',
-        logo: 'https://recloud.studio/favicon.png',
+        logo: 'https://worldexecute.me/favicon.png',
         sameAs: [
           'https://github.com/recloudstudio',
         ],
@@ -60,11 +60,7 @@ useHead(() => ({
 
     <nav class="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
       <div class="flex items-center gap-2">
-        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-500/20">
-          <svg class="h-5 w-5 text-teal-500 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-          </svg>
-        </div>
+        <AppLogo class="h-8 w-8" />
         <NuxtLink :to="localePath('/')" class="text-lg font-bold tracking-tight">ReCloud <span class="text-teal-500 dark:text-teal-400">Studio</span></NuxtLink>
       </div>
 

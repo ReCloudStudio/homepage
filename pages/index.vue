@@ -5,8 +5,9 @@ useHead({
   title: 'ReCloud Studio',
 })
 
-defineOgImage('OgImageDefault', {
+defineOgImage('OgImageDefault.takumi', {
   title: 'ReCloud Studio',
+  fonts: ogFonts(),
 })
 </script>
 

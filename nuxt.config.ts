@@ -18,7 +18,7 @@ export default defineNuxtConfig({
           content: 'We build open-source software. Fair, transparent, and community-driven.',
         },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://recloud.studio' },
+        { property: 'og:url', content: 'https://worldexecute.me' },
 
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'ReCloud Studio' },
@@ -41,8 +41,8 @@ export default defineNuxtConfig({
     fallback: 'dark',
   },
   modules: [
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
@@ -67,12 +67,9 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Syne: [400, 600, 700],
-      'DM Sans': [400, 500, 600],
       'Noto Sans SC': [400, 500, 700],
     },
     display: 'swap',
-    prefetch: true,
-    preconnect: true,
   },
   ogImage: {
     zeroRuntime: true,

@@ -70,10 +70,11 @@ export function useMembers() {
   return { members }
 }
 
-export function useMember(slug: string) {
+export function useMember(slug: string, localeOverride?: string) {
   const { locale } = useI18n()
   const member = computed(() => {
-    return getMembersForLocale(locale.value).find((m) => m.slug === slug) ?? null
+    const lang = (localeOverride ?? locale.value).startsWith('zh') ? 'zh' : 'en'
+    return getMembersForLocale(lang).find((m) => m.slug === slug) ?? null
   })
   return { member }
 }

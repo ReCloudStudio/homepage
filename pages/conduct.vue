@@ -20,8 +20,9 @@ useHead({
   title: `${t('nav.conduct')} — ReCloud Studio`,
 })
 
-defineOgImage('OgImageDefault', {
-  title: t('nav.conduct'),
+defineOgImage('OgImageDefault.takumi', {
+  title: t('nav.conduct', 'en'),
+  fonts: ogFonts(),
 })
 </script>
 

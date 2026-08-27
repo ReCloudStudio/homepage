@@ -4,6 +4,7 @@ import { siGithub, siX, siDiscord, siMatrix, siTelegram, siBilibili, siGmail } f
 const route = useRoute()
 const localePath = useLocalePath()
 const { member } = useMember(route.params.slug as string)
+const { member: memberEn } = useMember(route.params.slug as string, 'en')
 const { t } = useI18n()
 
 if (!member.value) {
@@ -104,9 +105,10 @@ useHead(() => ({
   ] : [],
 }))
 
-defineOgImage('OgImageDefault', {
-  title: member.value?.name || '',
-  description: member.value?.role || '',
+defineOgImage('OgImageDefault.takumi', {
+  title: memberEn.value?.name || member.value?.name || '',
+  description: memberEn.value?.role || '',
+  fonts: ogFonts(),
 })
 </script>
 
