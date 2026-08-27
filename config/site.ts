@@ -8,10 +8,22 @@ export const siteConfig = {
     github: 'recloudstudio',
     twitter: 'recloudstudio',
     telegram: 'recloudstudio',
-    discord: undefined as string | undefined,
+    discord: 'PBxdFTRM8',
   },
 
-  repos: ['WebHooker', 'Mailer', 'SleepyXposed', 'Shit-Bot', 'x-to-img', 'homepage'],
+  repos: [
+    'WebHooker',
+    'Mailer',
+    'SleepyXposed',
+    'Shit-Bot',
+    'x-to-img',
+    'homepage',
+    'docs',
+    'icon',
+    'icon-showcase',
+    'backuper',
+    'mirror',
+  ],
 }
 
 export type SiteConfig = typeof siteConfig

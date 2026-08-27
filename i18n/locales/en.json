@@ -22,7 +22,7 @@
     "oss": "100% open source",
     "community": "Community driven",
     "transparent": "Built in public",
-    "permissive": "MIT licensed"
+    "permissive": "AGPL licensed"
   },
   "projects": {
     "title": "Our projects",
@@ -36,7 +36,12 @@
       "Shit-Bot": "Automatically monitors X/Twitter users' posts and pushes them to groups or channels via Discord/Telegram bots. Supports keyword filtering, media filtering, tweet-to-image rendering, and a multi-admin approval workflow.",
       "x-to-img": "API service that converts X/Twitter tweets to PNG images. Built with Hono + Satori, deployable to Cloudflare Workers / Deno Deploy / Bun.",
       "SleepyXposed": "An Xposed module that monitors foreground app switches on Android devices in real time and syncs them to a Sleepy server for personal online status. Features battery and charging tracking, a configurable server, media status reporting (system hooks / notification listener / dumpsys), and a multi-level logging system.",
-      "homepage": "Source code of this very website, built with Nuxt 4 and Tailwind CSS, deployed on Cloudflare Pages."
+      "homepage": "Source code of this very website, built with Nuxt 4 and Tailwind CSS, deployed on Cloudflare Pages.",
+      "docs": "Documentation site for ReCloud Studio, built with MDX, hosting usage guides and developer docs for our projects.",
+      "icon": "ReCloud Studio brand icons, with build scripts that generate SVG and multi-size PNG assets.",
+      "icon-showcase": "ReCloud brand icon showcase site for previewing and grabbing icon assets online.",
+      "Backuper": "Backuper is a server backup tool that supports scheduled or manual backups of directories, MySQL, PostgreSQL and other data sources, uploading archives to local storage, remote SSH, or S3-compatible object storage.",
+      "Mirror": "Mirror repositories from GitHub to GitLab / Codeberg / CNB."
     }
   },
   "team": {
