@@ -80,6 +80,23 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: 'cloudflare-module',
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/projects',
+        '/team',
+        '/partners',
+        '/conduct',
+        '/team/rhencloud',
+        '/en',
+        '/en/projects',
+        '/en/team',
+        '/en/partners',
+        '/en/conduct',
+        '/en/team/rhencloud',
+      ],
+    },
   },
   vite: {
     optimizeDeps: {
